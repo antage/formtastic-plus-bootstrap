@@ -1,0 +1,11 @@
+# bundler dirs
+/.gems
+/bin
+/.bundle
+/Gemfile.lock
+
+# rvm files
+/.rvmrc
+
+# sublime text files
+/*.sublime-*

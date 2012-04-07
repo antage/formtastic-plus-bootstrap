@@ -1,0 +1,30 @@
+fieldset.inputs {
+  ol {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    > li.input {
+      margin: (0.5 * $baseLineHeight) 0 $baseLineHeight 0;
+      @include clearfix();
+
+      @import "inputs/stringish";
+      @import "inputs/range";
+      @import "inputs/text";
+      @import "inputs/boolean";
+      @import "inputs/check_boxes";
+      @import "inputs/radio";
+      @import "inputs/select";
+      @import "inputs/file";
+      @import "inputs/datetime";
+
+      .input-mini    { width: 1   * $gridColumnWidth !important; }
+      .input-small   { width: 1.5 * $gridColumnWidth !important; }
+      .input-medium  { width: 2   * $gridColumnWidth !important; }
+      .input-large   { width: 3.5 * $gridColumnWidth !important; }
+      .input-xlarge  { width: 5   * $gridColumnWidth !important; }
+      .input-xxlarge { width: 9   * $gridColumnWidth !important; }
+    }
+  }
+}

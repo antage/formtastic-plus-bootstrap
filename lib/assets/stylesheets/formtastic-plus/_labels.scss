@@ -1,0 +1,16 @@
+fieldset.inputs {
+  > ol > li.input {
+    label.label {
+      position: relative;
+      display: block;
+      float: left;
+
+      margin: 0;
+      padding-top: 5px;
+      padding-right: 20px;
+      width: $labelWidth - 20px;
+
+      @include label-common();
+    }
+  }
+}

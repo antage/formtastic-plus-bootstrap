@@ -1,0 +1,55 @@
+&.date, &.time, &.datetime {
+  padding: 0;
+
+  fieldset.fragments {
+    @include clearfix();
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    > legend.label {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      width: $labelWidth;
+
+      label {
+        position: relative;
+        display: inline-block;
+
+        margin: 0;
+        padding: 4px 20px 4px 0;
+        width: $labelWidth - 20px;
+
+        line-height: $baseLineHeight;
+
+        @include label-common();
+      }
+    }
+
+    > ol.fragments-group {
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-left: $labelWidth;
+
+      > li.fragment {
+        display: inline-block;
+        padding: 4px (0.5 * $baseLineHeight) 4px 0;
+        line-height: $baseLineHeight;
+
+        > label {
+          @include label-common();
+          display: block;
+          width: 100%;
+          padding-right: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

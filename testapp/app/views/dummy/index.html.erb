@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dummy form</title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 class="span6">Dummy form</h1>
+      </div>
+      <div class="row">
+        <%= semantic_form_for @dummy_form, url: "/", method: :post, html: { class: "span12" } do |form| %>
+          <%= form.inputs title: "Main inputs" do %>
+            <%= form.input :field1 %>
+            <%= form.input :field2, label: "very " * 20 + "label" %>
+            <%= form.input :field3, required: false %>
+            <%= form.input :field4, as: :text %>
+            <%= form.input :field5, as: :password, required: false, hint: "password field" %>
+            <%= form.input :field6, as: :number, required: false, hint: "number field" %>
+            <%= form.input :field7, as: :email, required: false, hint: "email field" %>
+            <%= form.input :field8, as: :url, required: false, hint: "url field" %>
+            <%= form.input :field9, as: :phone, required: false, hint: "phone field" %>
+            <%= form.input :field10, as: :search, required: false, hint: "search field" %>
+            <%= form.input :field11, as: :range, required: false, hint: "range field" %>
+          <% end %>
+          <%= form.inputs title: "Resized inputs" do %>
+            <%= form.input :field12, hint: "small size", input_html: { class: "input-small" } %>
+            <%= form.input :field13, hint: "medium size", input_html: { class: "input-medium" } %>
+            <%= form.input :field14, required: false, hint: "large size", input_html: { class: "input-large" } %>
+            <%= form.input :field15, as: :text, hint: "xlarge size", input_html: { class: "input-xlarge" } %>
+            <%= form.input :field16, required: false, hint: "xxlarge size", input_html: { class: "input-xxlarge" } %>
+          <% end %>
+          <%= form.inputs title: "Checkboxes and radio buttons" do %>
+            <%= form.input :field17, as: :boolean %>
+            <%= form.input :field18, as: :boolean %>
+            <%= form.input :field19, as: :boolean, required: true %>
+            <%= form.input :field20, as: :check_boxes %>
+            <%= form.input :field21, as: :radio %>
+          <% end %>
+          <%= form.inputs title: "Select boxes" do %>
+            <%= form.input :field22, as: :select, hint: "default size" %>
+            <%= form.input :field23, as: :select, hint: "medium size", input_html: { class: "input-medium" }  %>
+            <%= form.input :field24, as: :time_zone, hint: "time zones" %>
+            <%= form.input :field25, as: :country, hint: "countries" %>
+          <% end %>
+          <%= form.inputs title: "Files" do %>
+            <%= form.input :field26, as: :file, hint: "file input" %>
+          <% end %>
+          <%= form.inputs title: "Time & Date" do %>
+            <%= form.input :field27, as: :time, hint: "time input" %>
+            <%= form.input :field28, as: :date, hint: "date input" %>
+            <%= form.input :field29, as: :datetime, hint: "datetime input" %>
+          <% end %>
+          <%= form.inputs title: "Disabled & Readonly inputs" do %>
+            <%= form.input :field30, as: :string, input_html: { disabled: true } %>
+            <%= form.input :field31, as: :string, input_html: { readonly: true } %>
+            <%= form.input :field32, as: :text, input_html: { disabled: true } %>
+            <%= form.input :field33, as: :text, input_html: { readonly: true } %>
+            <%= form.input :field34, as: :boolean, input_html: { disabled: true } %>
+            <%= form.input :field35, as: :boolean, input_html: { readonly: true } %>
+            <%= form.input :field36, as: :check_boxes, input_html: { disabled: true } %>
+            <%= form.input :field37, as: :check_boxes, input_html: { readonly: true } %>
+            <%= form.input :field39, as: :radio, input_html: { disabled: true } %>
+            <%= form.input :field40, as: :radio, input_html: { readonly: true } %>
+            <%= form.input :field41, as: :select, input_html: { disabled: true } %>
+            <%= form.input :field42, as: :select, input_html: { readonly: true } %>
+            <%= form.input :field43, as: :datetime, input_html: { disabled: true } %>
+            <%= form.input :field44, as: :datetime, input_html: { readonly: true } %>
+          <% end %>
+          <%= form.actions do %>
+            <%= form.action :submit %>
+            <%= form.action :cancel %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>

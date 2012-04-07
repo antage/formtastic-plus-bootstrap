@@ -1,0 +1,8 @@
+fieldset.inputs {
+  > ol > li.input > p.inline-hints {
+    display: block;
+    margin: 0 0 0 $labelWidth;
+    color: $grayLight;
+    @include font-shorthand($baseFontSize, normal, $baseLineHeight);
+  }
+}

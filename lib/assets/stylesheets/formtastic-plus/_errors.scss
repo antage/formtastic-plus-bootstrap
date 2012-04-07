@@ -1,0 +1,36 @@
+fieldset.inputs {
+  > ol {
+    > li.input > p.inline-errors {
+      display: block;
+      margin: 0 0 0 $labelWidth;
+      color: $errorText;
+      @include font-shorthand($baseFontSize, normal, $baseLineHeight);
+    }
+
+    > li.error {
+      > label, > fieldset.choices > legend > label, > fieldset.fragments > legend > label {
+        color: $errorText !important;
+      }
+
+      input, select, textarea {
+        color: $errorText !important;
+        border-color: $errorText !important;
+        &:focus {
+          border-color: darken($errorText, 10%) !important;
+          @include box-shadow-important(0 0 6px lighten($errorText, 20%));
+        }
+      }
+
+      input:focus:required:invalid,
+      textarea:focus:required:invalid,
+      select:focus:required:invalid {
+        color: $errorText !important;
+        border-color: $errorText !important;
+        &:focus {
+          border-color: darken($errorText, 10%) !important;
+          @include box-shadow-important(0 0 6px lighten($errorText, 20%));
+        }
+      }
+    }
+  }
+}

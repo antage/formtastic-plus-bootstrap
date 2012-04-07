@@ -1,0 +1,150 @@
+@mixin box-shadow-important($shadow: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  -webkit-box-shadow: $shadow !important;
+  -moz-box-shadow: $shadow !important;
+  box-shadow: $shadow !important;
+}
+
+@mixin button() {
+  display: inline-block;
+  @include ie7-inline-block();
+  padding: 4px 10px 4px;
+  margin-bottom: 0; // For input.btn
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $grayDark;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255,255,255,.75);
+  vertical-align: middle;
+  @include buttonBackground($btnBackground, $btnBackgroundHighlight);
+  border: 1px solid $btnBorder;
+  border-bottom-color: darken($btnBorder, 10%);
+  @include border-radius(4px);
+  $shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  @include box-shadow($shadow);
+  cursor: pointer;
+
+  // Give IE7 some love
+  @include ie7-restore-left-whitespace();
+
+  &:hover {
+    color: $grayDark;
+    text-decoration: none;
+    background-color: darken($white, 10%);
+    background-position: 0 -15px;
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+  }
+
+  &:focus {
+    @include tab-focus();
+  }
+
+  &:active {
+    background-image: none;
+    $shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+    @include box-shadow($shadow);
+    background-color: darken($white, 10%);
+    background-color: darken($white, 15%) \9;
+    outline: 0;
+  }
+
+  &[disabled] {
+    cursor: default;
+    background-image: none;
+    background-color: darken($white, 10%);
+    @include opacity(0.65);
+    @include box-shadow(none);
+  }
+}
+
+@mixin button-primary() {
+  &, &:hover {
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    color: $white;
+  }
+
+  @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
+}
+
+@mixin text-input() {
+  display: inline-block;
+  width: $inputWidth;
+  height: $baseLineHeight;
+  padding: 4px;
+  margin-bottom: 0.25 * $baseLineHeight;
+  color: $gray;
+  border: 1px solid $inputBorder;
+
+  @include font-shorthand($baseFontSize, normal, $baseLineHeight);
+
+  @include border-radius(3px);
+
+  @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+  $transition: border linear .2s, box-shadow linear .2s;
+  @include transition($transition);
+
+  &:focus {
+    border-color: rgba(82,168,236,.8);
+    $shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    @include box-shadow($shadow);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+  }
+}
+
+@mixin required-abbr($top-offset) {
+  abbr {
+    position: absolute;
+    right: 9px;
+    top: $top-offset;
+    color: red;
+    border: none;
+    font-size: 1.5 * $baseFontSize;
+  }
+}
+
+@mixin label-common($abbr-top-offset: 2px) {
+  color: $grayDark;
+  text-align: right;
+
+  @include font-shorthand($baseFontSize, normal, $baseLineHeight);
+  @include required-abbr($abbr-top-offset);
+}
+
+@mixin switch-input($selector) {
+  #{$selector} {
+    width: auto;
+    height: $baseLineHeight;
+    padding: 0;
+    margin: -2px (0.3 * $baseLineHeight) 0 0;
+    *margin-top: 0; /* IE7 */
+    line-height: normal;
+    cursor: pointer;
+    @include border-radius(0);
+    border: 0 \9; /* IE9 and down */
+
+    &:focus {
+      @include box-shadow(none);
+      @include tab-focus();
+    }
+  }
+
+  &.input {
+    #{$selector} {
+      margin-left: $labelWidth;
+    }
+  }
+
+  label {
+    position: relative;
+    display: inline-block;
+
+    padding-right: 20px;
+
+    cursor: pointer;
+
+    @include label-common($abbr-top-offset: -2px);
+  }
+}

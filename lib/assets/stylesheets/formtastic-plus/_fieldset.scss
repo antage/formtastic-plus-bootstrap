@@ -1,0 +1,33 @@
+fieldset.inputs, fieldset.actions {
+  @include clearfix();
+
+  margin: $baseLineHeight (1.5 * $baseLineHeight);
+  padding: 0;
+
+  border: none;
+}
+
+fieldset.inputs {
+  padding-top: 0.75 * $baseLineHeight;
+
+  > legend {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 1.5 * $baseLineHeight;
+    padding: 0;
+
+    @include font-shorthand(1.5 * $baseFontSize, normal, 1.5 * $baseLineHeight);
+
+    color: $grayDark;
+
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+fieldset.actions {
+  > legend {
+    display: none;
+  }
+}

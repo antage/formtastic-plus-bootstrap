@@ -1,0 +1,21 @@
+// Core variables and mixins
+@import "bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap/mixins";
+
+$labelWidth: (4 * $gridColumnWidth) !default;
+$inputWidth: (5 * $gridColumnWidth) !default;
+
+@import "mixins";
+
+.formtastic {
+  @import "reset";
+
+  @import "form";
+  @import "fieldset";
+  @import "actions";
+  @import "labels";
+  @import "hints";
+  @import "errors";
+  @import "inputs";
+  @import "disabled";
+}

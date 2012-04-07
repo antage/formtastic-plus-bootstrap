@@ -1,0 +1,34 @@
+fieldset.actions {
+  padding: ($baseLineHeight - 1px) 0 $baseLineHeight;
+  margin-top: $baseLineHeight;
+  margin-bottom: $baseLineHeight;
+  background-color: $grayLighter;
+  border-top: 1px solid #ddd;
+  @include clearfix();
+
+  ol {
+    margin: 0;
+    margin-left: $labelWidth;
+    padding: 0;
+    list-style: none;
+
+
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+
+    li.input_action input {
+      @include button();
+
+      &[type='submit'] {
+        @include button-primary();
+      }
+    }
+
+    li.link_action a {
+      @include button();
+    }
+  }
+}

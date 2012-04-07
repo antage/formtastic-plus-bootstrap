@@ -1,0 +1,52 @@
+&.check_boxes {
+  padding: 0;
+
+  fieldset.choices {
+    @include clearfix();
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    > legend.label {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      width: $labelWidth;
+
+      label {
+        position: relative;
+        display: inline-block;
+
+        margin: 0;
+        padding: 4px 20px 4px 0;
+        width: $labelWidth - 20px;
+
+        line-height: $baseLineHeight;
+
+        @include label-common();
+      }
+    }
+
+    > ol.choices-group {
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-left: $labelWidth;
+
+      > li.choice {
+        padding: 4px 0;
+        line-height: $baseLineHeight;
+
+        @include switch-input("input[type='checkbox']");
+
+        > label {
+          @include label-common();
+        }
+      }
+    }
+  }
+}

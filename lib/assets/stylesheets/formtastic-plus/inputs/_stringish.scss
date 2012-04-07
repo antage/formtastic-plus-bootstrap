@@ -1,0 +1,11 @@
+&.stringish {
+  input[type='text'],
+  input[type='password'],
+  input[type='number'],
+  input[type='email'],
+  input[type='url'],
+  input[type='tel'],
+  input[type='search'] {
+    @include text-input();
+  }
+}

@@ -1,0 +1,12 @@
+fieldset.inputs {
+  input[disabled],
+  select[disabled],
+  textarea[disabled],
+  input[readonly],
+  select[readonly],
+  textarea[readonly] {
+    background-color: $inputDisabledBackground !important;
+    border-color: #ddd !important;
+    cursor: not-allowed;
+  }
+}

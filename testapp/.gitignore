@@ -1,0 +1,10 @@
+# bundler dirs
+/.gems
+/bin
+/.bundle
+
+/Gemfile.lock
+
+# rails
+/log/*.log
+/tmp
