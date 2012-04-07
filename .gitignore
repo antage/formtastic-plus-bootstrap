@@ -1,0 +1,13 @@
+# bundler
+/.gems
+/bin
+/.bundle
+/Gemfile.lock
+
+# rvm
+/.rvmrc
+
+# sublime text
+/*.sublime-*
+
+/testapp
