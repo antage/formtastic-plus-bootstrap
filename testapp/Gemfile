@@ -15,4 +15,4 @@ end
 
 gem "country-select"
 gem "formtastic"
-gem "formtastic-plus", path: "../"
+gem "formtastic-plus-bootstrap", path: "../"

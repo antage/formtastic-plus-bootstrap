@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
-  s.name = "formtastic-plus"
+  s.name = "formtastic-plus-bootstrap"
   s.version = "1.0.0.rc2"
   s.authors = ["Anton Ageev"]
   s.email = "antage@gmail.com"
   s.summary = "formtastic meets bootstrap"
-  s.description = "formtastic-plus makes a formtastic form to look like a bootstrap form."
-  s.homepage = "http://github.com/antage/formtastic-plus"
+  s.description = "formtastic-plus-bootstrap makes a formtastic form to look like a bootstrap form."
+  s.homepage = "http://github.com/antage/formtastic-plus-bootstrap"
 
   s.add_runtime_dependency "railties", ">= 3.1.0"
   s.add_runtime_dependency "sass-rails"

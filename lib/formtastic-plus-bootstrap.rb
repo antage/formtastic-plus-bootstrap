@@ -1,6 +1,6 @@
 require "bootstrap-sass"
 
-module FormtasticPlus
+module FormtasticPlusBootstrap
   class Engine < Rails::Engine
   end
 end
