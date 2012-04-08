@@ -26,48 +26,49 @@
             <%= form.input :field11, as: :range, required: false, hint: "range field" %>
           <% end %>
           <%= form.inputs title: "Resized inputs" do %>
-            <%= form.input :field12, hint: "small size", input_html: { class: "input-small" } %>
-            <%= form.input :field13, hint: "medium size", input_html: { class: "input-medium" } %>
-            <%= form.input :field14, required: false, hint: "large size", input_html: { class: "input-large" } %>
-            <%= form.input :field15, as: :text, hint: "xlarge size", input_html: { class: "input-xlarge" } %>
-            <%= form.input :field16, required: false, hint: "xxlarge size", input_html: { class: "input-xxlarge" } %>
+            <%= form.input :field20, hint: "small size", input_html: { class: "input-small" } %>
+            <%= form.input :field21, hint: "medium size", input_html: { class: "input-medium" } %>
+            <%= form.input :field22, required: false, hint: "large size", input_html: { class: "input-large" } %>
+            <%= form.input :field23, as: :text, hint: "xlarge size", input_html: { class: "input-xlarge" } %>
+            <%= form.input :field24, required: false, hint: "xxlarge size", input_html: { class: "input-xxlarge" } %>
           <% end %>
           <%= form.inputs title: "Checkboxes and radio buttons" do %>
-            <%= form.input :field17, as: :boolean %>
-            <%= form.input :field18, as: :boolean %>
-            <%= form.input :field19, as: :boolean, required: true %>
-            <%= form.input :field20, as: :check_boxes %>
-            <%= form.input :field21, as: :radio %>
+            <%= form.input :field30, as: :boolean %>
+            <%= form.input :field31, as: :boolean %>
+            <%= form.input :field32, as: :boolean, required: true %>
+            <%= form.input :field33, as: :check_boxes %>
+            <%= form.input :field34, as: :radio %>
           <% end %>
           <%= form.inputs title: "Select boxes" do %>
-            <%= form.input :field22, as: :select, hint: "default size" %>
-            <%= form.input :field23, as: :select, hint: "medium size", input_html: { class: "input-medium" }  %>
-            <%= form.input :field24, as: :time_zone, hint: "time zones" %>
-            <%= form.input :field25, as: :country, hint: "countries" %>
+            <%= form.input :field40, as: :select, hint: "default size" %>
+            <%= form.input :field41, as: :select, hint: "medium size", input_html: { class: "input-medium" }  %>
+            <%= form.input :field42, as: :time_zone, hint: "time zones" %>
+            <%= form.input :field43, as: :country, hint: "countries" %>
+            <%= form.input :field44, as: :select, multiple: true, hint: "multiple select" %>
           <% end %>
           <%= form.inputs title: "Files" do %>
-            <%= form.input :field26, as: :file, hint: "file input" %>
+            <%= form.input :field50, as: :file, hint: "file input" %>
           <% end %>
           <%= form.inputs title: "Time & Date" do %>
-            <%= form.input :field27, as: :time, hint: "time input" %>
-            <%= form.input :field28, as: :date, hint: "date input" %>
-            <%= form.input :field29, as: :datetime, hint: "datetime input" %>
+            <%= form.input :field60, as: :time, hint: "time input" %>
+            <%= form.input :field61, as: :date, hint: "date input" %>
+            <%= form.input :field62, as: :datetime, hint: "datetime input" %>
           <% end %>
           <%= form.inputs title: "Disabled & Readonly inputs" do %>
-            <%= form.input :field30, as: :string, input_html: { disabled: true } %>
-            <%= form.input :field31, as: :string, input_html: { readonly: true } %>
-            <%= form.input :field32, as: :text, input_html: { disabled: true } %>
-            <%= form.input :field33, as: :text, input_html: { readonly: true } %>
-            <%= form.input :field34, as: :boolean, input_html: { disabled: true } %>
-            <%= form.input :field35, as: :boolean, input_html: { readonly: true } %>
-            <%= form.input :field36, as: :check_boxes, input_html: { disabled: true } %>
-            <%= form.input :field37, as: :check_boxes, input_html: { readonly: true } %>
-            <%= form.input :field39, as: :radio, input_html: { disabled: true } %>
-            <%= form.input :field40, as: :radio, input_html: { readonly: true } %>
-            <%= form.input :field41, as: :select, input_html: { disabled: true } %>
-            <%= form.input :field42, as: :select, input_html: { readonly: true } %>
-            <%= form.input :field43, as: :datetime, input_html: { disabled: true } %>
-            <%= form.input :field44, as: :datetime, input_html: { readonly: true } %>
+            <%= form.input :field70, as: :string, input_html: { disabled: true } %>
+            <%= form.input :field71, as: :string, input_html: { readonly: true } %>
+            <%= form.input :field72, as: :text, input_html: { disabled: true } %>
+            <%= form.input :field73, as: :text, input_html: { readonly: true } %>
+            <%= form.input :field74, as: :boolean, input_html: { disabled: true } %>
+            <%= form.input :field75, as: :boolean, input_html: { readonly: true } %>
+            <%= form.input :field76, as: :check_boxes, input_html: { disabled: true } %>
+            <%= form.input :field77, as: :check_boxes, input_html: { readonly: true } %>
+            <%= form.input :field79, as: :radio, input_html: { disabled: true } %>
+            <%= form.input :field80, as: :radio, input_html: { readonly: true } %>
+            <%= form.input :field81, as: :select, input_html: { disabled: true } %>
+            <%= form.input :field82, as: :select, input_html: { readonly: true } %>
+            <%= form.input :field83, as: :datetime, input_html: { disabled: true } %>
+            <%= form.input :field84, as: :datetime, input_html: { readonly: true } %>
           <% end %>
           <%= form.actions do %>
             <%= form.action :submit %>

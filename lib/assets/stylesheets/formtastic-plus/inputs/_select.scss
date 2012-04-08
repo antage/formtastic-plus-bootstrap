@@ -14,5 +14,9 @@
 
     @include font-shorthand($baseFontSize, normal, 28px);
     font-family: $baseFontFamily;
+
+    &[multiple], &[size] {
+        height: auto;
+    }
   }
 }
