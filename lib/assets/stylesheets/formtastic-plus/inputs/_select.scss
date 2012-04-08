@@ -3,7 +3,7 @@
     display: inline-block;
     width: $inputWidth;
     padding: 4px;
-    margin-bottom: 9px;
+    margin-bottom: 0.25 * $baseLineHeight;
     color: $gray;
     background-color: $inputBackground;
     border: 1px solid $inputBorder;
@@ -14,5 +14,9 @@
 
     @include font-shorthand($baseFontSize, normal, 28px);
     font-family: $baseFontFamily;
+
+    &[multiple], &[size] {
+        height: auto;
+    }
   }
 }
