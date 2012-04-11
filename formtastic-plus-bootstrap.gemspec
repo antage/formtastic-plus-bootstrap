@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "railties", ">= 3.1.0"
   s.add_runtime_dependency "sass-rails"
   s.add_runtime_dependency "bootstrap-sass", "~> 2.0"
-  s.add_runtime_dependency "formtastic", "~> 2.1"
+  s.add_runtime_dependency "formtastic", "~> 2.2"
 
   s.files = Dir["lib/**/*"] + ["README.md", "LICENSE"]
 end
