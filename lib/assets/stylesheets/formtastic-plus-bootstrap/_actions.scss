@@ -11,12 +11,13 @@ fieldset.actions {
     margin-left: $labelWidth;
     padding: 0;
     list-style: none;
-
+    font-size: 0; // collapse spaces and newline-symbols
 
     li {
       display: inline-block;
-      margin: 0;
+      margin: 0 (0.25 * $baseLineHeight);
       padding: 0;
+      font-size: $baseFontSize;
     }
 
     li.input_action input {
