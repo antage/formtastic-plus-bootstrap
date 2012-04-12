@@ -18,7 +18,7 @@ Add following lines in `app/assets/stylesheets/application.css`:
 
     /*
      ...
-     *= require bootstrap_without_forms
+     *= require bootstrap-without-forms
      *= require formtastic-plus-bootstrap
      ...
      */
