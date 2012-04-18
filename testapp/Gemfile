@@ -16,3 +16,4 @@ end
 gem "country-select"
 gem "formtastic"
 gem "formtastic-plus-bootstrap", path: "../"
+gem "quiet_assets"
