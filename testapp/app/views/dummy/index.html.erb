@@ -49,10 +49,15 @@
           <%= form.inputs title: "Files" do %>
             <%= form.input :field50, as: :file, hint: "file input" %>
           <% end %>
-          <%= form.inputs title: "Time & Date" do %>
+          <%= form.inputs title: "Time & Date (formtastic <= 2.1)" do %>
             <%= form.input :field60, as: :time, hint: "time input" %>
             <%= form.input :field61, as: :date, hint: "date input" %>
             <%= form.input :field62, as: :datetime, hint: "datetime input" %>
+          <% end %>
+          <%= form.inputs title: "Time & Date (formtastic >= 2.2)" do %>
+            <%= form.input :field60, as: :time_select, hint: "time input" %>
+            <%= form.input :field61, as: :date_select, hint: "date input" %>
+            <%= form.input :field62, as: :datetime_select, hint: "datetime input" %>
           <% end %>
           <%= form.inputs title: "Disabled & Readonly inputs" do %>
             <%= form.input :field70, as: :string, input_html: { disabled: true } %>
