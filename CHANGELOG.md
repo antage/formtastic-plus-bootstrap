@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.0.2
+
 * Added styles for formtastic 2.2 time & date inputs.
 
 ## 1.0.1
