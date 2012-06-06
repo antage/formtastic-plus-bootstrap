@@ -6,7 +6,7 @@
 
 Add following lines to Gemfile:
 
-    gem "bootstrap-sass", "~> 2.0"
+    gem "bootstrap-sass", "~> 2.0.3"
     gem "formtastic", "~> 2.1"
     gem "formtastic-plus-bootstrap"
 
