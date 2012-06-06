@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+* Updated to Bootstrap 2.0.3.
+
 ## 1.0.2
 
 * Added styles for formtastic 2.2 time & date inputs.
