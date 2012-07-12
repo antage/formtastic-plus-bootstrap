@@ -62,24 +62,38 @@
 
 
 
-// phones and smaller
+// inputs have to use almost the full span on phones and smaller
+// but just 90% will do because of margins and paddings
 @media (max-width: 480px) {
-  
+
+  // Fieldsets have to lose marhgins and paddings
+  .formtastic fieldset.inputs, .formtastic fieldset.actions {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
   .formtastic fieldset.inputs ol > li.input {
-    width: 100% !important;
-    input, textarea, select, .input-xlarge, .input-xxlarge {
+    width: 97% !important;
+    input, textarea, select, .input-large, .input-xlarge, .input-xxlarge {
       width: 100% !important;
     }
+
+    // this doesn't help radios and checkboxes
+    input[type="checkbox"], input[type="radio"] {
+      width: 20px !important;
+    }
+
   }
-  
+
 }
 
-// the xxlarge-input-field is too big for small displays
-// 540px for .input-xxlarge plus 40px margin/padding = 580px
-@media (max-width: 580px) {
+
+
+// the xxlarge-input-field is too big for small desktops
+@media (min-width: 480px) and (max-width: 980px) {
 
   .formtastic fieldset.inputs ol > li.input .input-xxlarge {
-    width: 100% !important;
+    width: 300px !important;
   }
 
 }
