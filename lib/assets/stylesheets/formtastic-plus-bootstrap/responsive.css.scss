@@ -1,0 +1,126 @@
+/*
+ * This file holds all relevant extensions to use the bootstrap-responsive-formats in formtastic.
+ *
+ * In portrait- and phone-mode all input fields should fit the whole width, while labels and inline-hints
+ * have to have their own rows.
+*/
+
+// Phone to Portrait Tablet
+@media (max-width: 767px) {
+  // this should only apply to formtastic forms
+  .formtastic {
+    // force labels into single rows
+    label {
+      float: none !important;
+      text-align: left !important;
+
+      // set abbr closer to label text
+      abbr {
+        position: relative !important;
+        right: 0px !important;
+      }
+    }
+
+    // legends should also be in single rows
+    legend {
+      float: none !important;
+      display: block !important;
+    }
+
+    // inline-errors and -hints should be lefties
+    p.inline-errors, p.inline-hints {
+      margin-left: 0px !important;
+    }
+
+    // the height of textareas should be limited
+    textarea {
+      height: 200px !important;
+    }
+
+    // push booleans to the left
+    input[type="checkbox"] {
+      margin-left: 0px !important;
+    }
+
+    // groups of choices and fragments go left too
+    ol.choices-group, ol.fragments-group {
+      margin-left: 0px !important;
+    }
+
+    // and finally the actions have to go left
+    .actions ol {
+      margin-left: 0px !important;
+    }
+  } // close .formtastic
+} // close @media (max-width: 767px)
+
+// inputs have to use almost the full span on phones and smaller
+// but just 90% will do because of margins and paddings
+@media (max-width: 480px) {
+  .formtastic {
+    fieldset.inputs {
+      margin: 0 2px !important;
+      padding: 0 !important;
+    }
+
+    fieldset.actions {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    fieldset.inputs ol > li {
+      &.input {
+        width: 100% !important;
+
+        input, textarea, select, .input-xlarge, .input-xxlarge {
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        input[type='checkbox'], input[type='radio'] {
+          width: auto !important;
+        }
+      }
+
+      &.stringish {
+        input, .input-xxlarge {
+          // changing box-sizing we have to correct height
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 28px !important;
+        }
+
+      }
+
+      &.text {
+        textarea {
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 640px) {
+  .formtastic {
+    fieldset.inputs ol > li.input {
+      .input-xxlarge {
+        width: 300px !important;
+      }
+    }
+  }
+}
+
+// the xxlarge-input-field is too big for small desktops
+@media (min-width: 768px) and (max-width: 979px) {
+  .formtastic {
+    fieldset.inputs ol > li.input {
+      .input-xxlarge {
+        width: 415px !important;
+      }
+    }
+  }
+}

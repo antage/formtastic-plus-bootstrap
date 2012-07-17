@@ -23,6 +23,12 @@ Add following lines in `app/assets/stylesheets/application.css`:
      ...
      */
 
+If you use bootstrap-responsive, also add the following additional line:
+
+    /*
+     *= require formtastic-plus-bootstrap/responsive
+     */
+
 All done. Enjoy nice looking forms!
 
 ### Why should I use `formtastic-plus-bootstrap` instead of `formtastic-bootstrap`?

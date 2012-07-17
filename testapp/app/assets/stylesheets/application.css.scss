@@ -10,11 +10,13 @@
  *
  *= require bootstrap-without-forms
  *= require formtastic-plus-bootstrap
+ *= require formtastic-plus-bootstrap/responsive
  *= require_self
 */
 
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
+@import "bootstrap-responsive";
 
 body {
   margin-top: $baseLineHeight;
