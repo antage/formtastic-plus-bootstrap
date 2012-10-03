@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+* Updated to Bootstrap 2.1.
+
 ## 1.1
 
 * Support for responsive forms.
