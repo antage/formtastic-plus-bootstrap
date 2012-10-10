@@ -34,3 +34,21 @@ fieldset.inputs {
     }
   }
 }
+
+// form.semantic_errors styles
+& > ul.errors {
+  list-style-type: none;
+
+  margin: 20px 30px;
+  padding: (0.5 * $baseLineHeight) $baseLineHeight;
+  width: auto;
+  background-color: $errorBackground;
+  color: $errorText;
+
+  border: solid 1px $errorBorder;
+  @include border-radius(6px);
+
+  li {
+    margin: (0.5 * $baseLineHeight) 0;
+  }
+}
