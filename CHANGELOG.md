@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+* Added styles for #semantic_errors method.
+
 ## 1.1.1
 
 * Updated to Bootstrap 2.1.
