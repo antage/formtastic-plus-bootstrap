@@ -13,6 +13,7 @@
       </div>
       <div class="row">
         <%= semantic_form_for @dummy_form, url: "/", method: :post, html: { class: "span12" } do |form| %>
+          <%= form.semantic_errors %>
           <%= form.inputs title: "Main inputs" do %>
             <%= form.input :field1 %>
             <%= form.input :field2, label: "very " * 20 + "label" %>
