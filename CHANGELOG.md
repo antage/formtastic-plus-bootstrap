@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+* Added styles for date, time, datetime input tags.
+
 ## 1.1.2
 
 * Added styles for #semantic_errors method.
