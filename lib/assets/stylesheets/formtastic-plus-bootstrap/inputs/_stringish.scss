@@ -5,7 +5,11 @@
   input[type='email'],
   input[type='url'],
   input[type='tel'],
-  input[type='search'] {
+  input[type='search'],
+  input[type='date'],
+  input[type='time'],
+  input[type='datetime'],
+  input[type='datetime-local'] {
     @include text-input();
   }
 }
