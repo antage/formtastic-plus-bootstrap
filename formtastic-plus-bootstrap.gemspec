@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "formtastic-plus-bootstrap"
-  s.version = "1.1.2"
+  s.version = "1.1.3"
   s.authors = ["Anton Ageev"]
   s.email = "antage@gmail.com"
   s.summary = "formtastic meets bootstrap"
