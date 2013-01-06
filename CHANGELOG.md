@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.4
+
+* Updated to Bootstrap 2.2.
+
 ## 1.1.3
 
 * Added styles for date, time, datetime input tags.
