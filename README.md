@@ -26,6 +26,7 @@ Add following lines in `app/assets/stylesheets/application.css`:
 If you use bootstrap-responsive, also add the following additional line:
 
     /*
+     *= require bootstrap-responsive
      *= require formtastic-plus-bootstrap/responsive
      */
 

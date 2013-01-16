@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.5
+
+* Added bootstrap/media partial in bootstrap-without-forms.
+* Get rid of implicit bootstrap-responsive import.
+
 ## 1.1.4
 
 * Updated to Bootstrap 2.2.

@@ -42,6 +42,7 @@
 
 // Components: Misc
 @import "bootstrap/thumbnails";
+@import "bootstrap/media";
 @import "bootstrap/labels-badges";
 @import "bootstrap/progress-bars";
 @import "bootstrap/accordion";
@@ -50,5 +51,3 @@
 
 // Utility classes
 @import "bootstrap/utilities"; // Has to be last to override when necessary
-
-@import "bootstrap-responsive";
