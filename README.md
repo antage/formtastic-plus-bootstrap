@@ -1,5 +1,7 @@
 # Formtastic meets Bootstrap
 
+[![Dependency Status](https://gemnasium.com/antage/formtastic-plus-bootstrap.png)](https://gemnasium.com/antage/formtastic-plus-bootstrap)
+
 `formtastic-plus-bootstrap` makes a formtastic form to look like a [bootstrap](http://twitter.github.com/bootstrap/) form.
 
 ## Installation
