@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.1.6
+
 * Relaxed requirement for bootstrap-sass version.
 
 ## 1.1.5
