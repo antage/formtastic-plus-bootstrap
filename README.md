@@ -1,13 +1,14 @@
 # Formtastic meets Bootstrap
 
+[![Dependency Status](https://gemnasium.com/antage/formtastic-plus-bootstrap.png)](https://gemnasium.com/antage/formtastic-plus-bootstrap)
+
 `formtastic-plus-bootstrap` makes a formtastic form to look like a [bootstrap](http://twitter.github.com/bootstrap/) form.
 
 ## Installation
 
 Add following lines to Gemfile:
 
-    gem "bootstrap-sass", "~> 2.0.3"
-    gem "formtastic", "~> 2.1"
+    gem "formtastic", "~> 2.2"
     gem "formtastic-plus-bootstrap"
 
 Run `bundle install`.
