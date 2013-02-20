@@ -1,5 +1,7 @@
 # Changelog
 
+* Relaxed requirement for bootstrap-sass version.
+
 ## 1.1.5
 
 * Added bootstrap/media partial in bootstrap-without-forms.
