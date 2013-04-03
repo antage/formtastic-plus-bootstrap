@@ -9,15 +9,15 @@ fieldset.inputs {
       margin: (0.5 * $baseLineHeight) 0 $baseLineHeight 0;
       @include clearfix();
 
-      @import "inputs/stringish";
-      @import "inputs/range";
-      @import "inputs/text";
-      @import "inputs/boolean";
-      @import "inputs/check_boxes";
-      @import "inputs/radio";
-      @import "inputs/select";
-      @import "inputs/file";
-      @import "inputs/datetime";
+      @import "formtastic-plus-bootstrap/inputs/stringish";
+      @import "formtastic-plus-bootstrap/inputs/range";
+      @import "formtastic-plus-bootstrap/inputs/text";
+      @import "formtastic-plus-bootstrap/inputs/boolean";
+      @import "formtastic-plus-bootstrap/inputs/check_boxes";
+      @import "formtastic-plus-bootstrap/inputs/radio";
+      @import "formtastic-plus-bootstrap/inputs/select";
+      @import "formtastic-plus-bootstrap/inputs/file";
+      @import "formtastic-plus-bootstrap/inputs/datetime";
 
       .input-mini    { width: 1   * $gridColumnWidth !important; }
       .input-small   { width: 1.5 * $gridColumnWidth !important; }
