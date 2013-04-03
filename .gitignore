@@ -7,5 +7,8 @@
 # rvm files
 /.rvmrc
 
+# rbenv files
+/.rbenv-version
+
 # sublime text files
 /*.sublime-*

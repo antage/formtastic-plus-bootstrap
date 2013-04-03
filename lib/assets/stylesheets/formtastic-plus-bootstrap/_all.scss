@@ -5,17 +5,17 @@
 $labelWidth: (4 * $gridColumnWidth) !default;
 $inputWidth: (5 * $gridColumnWidth) !default;
 
-@import "mixins";
+@import "formtastic-plus-bootstrap/mixins";
 
 .formtastic {
-  @import "reset";
+  @import "formtastic-plus-bootstrap/reset";
 
-  @import "form";
-  @import "fieldset";
-  @import "actions";
-  @import "labels";
-  @import "hints";
-  @import "errors";
-  @import "inputs";
-  @import "disabled";
+  @import "formtastic-plus-bootstrap/form";
+  @import "formtastic-plus-bootstrap/fieldset";
+  @import "formtastic-plus-bootstrap/actions";
+  @import "formtastic-plus-bootstrap/labels";
+  @import "formtastic-plus-bootstrap/hints";
+  @import "formtastic-plus-bootstrap/errors";
+  @import "formtastic-plus-bootstrap/inputs";
+  @import "formtastic-plus-bootstrap/disabled";
 }

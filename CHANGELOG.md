@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.7
+
+* Fixed formtastic-plus-boostrap importing from subfolders.
+
 ## 1.1.6
 
 * Relaxed requirement for bootstrap-sass version.
